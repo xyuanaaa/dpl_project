@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1278</width>
+    <height>1091</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>皮肤病辅助诊断系统</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_21">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_13" stretch="1,4,1">
+      <item>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="title">
+         <string>文件浏览</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QTreeView" name="treeView"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_19" stretch="1,9,4">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <pointsize>25</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>皮肤病辅助诊断系统</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="title">
+           <string>原图</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QGraphicsView" name="graphicsView">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(135, 135, 135);</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTabWidget" name="tabWidget">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab">
+           <attribute name="title">
+            <string>缩略图</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QProgressBar" name="progressBar">
+              <property name="value">
+               <number>24</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QListWidget" name="listWidget"/>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_2">
+           <attribute name="title">
+            <string>视频拍摄</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_22">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_14" stretch="1,1,1">
+              <item>
+               <widget class="QPushButton" name="pushButton_3">
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>打开摄像头</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_4">
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>关闭摄像头</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_5">
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>截图</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_18" stretch="1,1,2,2,2,3,3,3,2,1">
+        <item>
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="title">
+           <string>毛发噪声</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="QCheckBox" name="checkBox">
+             <property name="text">
+              <string>去除毛发噪声</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_4">
+          <property name="title">
+           <string>肿瘤区域</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <widget class="QCheckBox" name="checkBox_2">
+             <property name="text">
+              <string>分割肿瘤区域</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_5">
+          <property name="title">
+           <string>平滑处理</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_7" stretch="1,1">
+             <item>
+              <widget class="QCheckBox" name="checkBox_3">
+               <property name="text">
+                <string>进行平滑处理</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,1">
+               <item>
+                <widget class="QLabel" name="label_2">
+                 <property name="text">
+                  <string>核大小</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="spinBox"/>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_11">
+          <property name="title">
+           <string>噪声</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_20">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <item>
+              <widget class="QCheckBox" name="checkBox_11">
+               <property name="text">
+                <string>进行噪声处理</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_12" stretch="1,1">
+               <item>
+                <widget class="QLabel" name="label_12">
+                 <property name="text">
+                  <string>椒盐噪声</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="checkBox_13">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_11" stretch="1,1">
+               <item>
+                <widget class="QLabel" name="label_11">
+                 <property name="text">
+                  <string>高斯噪声</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="checkBox_12">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_6">
+          <property name="title">
+           <string>伽马矫正</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_11">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_10" stretch="1,1">
+             <item>
+              <widget class="QCheckBox" name="checkBox_4">
+               <property name="text">
+                <string>进行伽马矫正</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,2,1">
+               <item>
+                <widget class="QLabel" name="label_3">
+                 <property name="text">
+                  <string>gamma值</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="horizontalSlider">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit"/>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_7">
+          <property name="title">
+           <string>均衡化</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_12">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_8" stretch="1,1,1,1">
+             <item>
+              <widget class="QCheckBox" name="checkBox_5">
+               <property name="text">
+                <string>进行均衡化</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,1">
+               <item>
+                <widget class="QLabel" name="label_4">
+                 <property name="text">
+                  <string>R通道</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="checkBox_6">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,1">
+               <item>
+                <widget class="QLabel" name="label_5">
+                 <property name="text">
+                  <string>G通道</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="checkBox_7">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="1,1">
+               <item>
+                <widget class="QLabel" name="label_6">
+                 <property name="text">
+                  <string>B通道</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="checkBox_8">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_8">
+          <property name="title">
+           <string>亮度调节</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_14">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_13">
+             <item>
+              <widget class="QCheckBox" name="checkBox_9">
+               <property name="text">
+                <string>进行亮度调节</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="1,2,1">
+               <item>
+                <widget class="QLabel" name="label_7">
+                 <property name="text">
+                  <string>alpha</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="horizontalSlider_2">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_2"/>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="1,2,1">
+               <item>
+                <widget class="QLabel" name="label_8">
+                 <property name="text">
+                  <string>beta</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="horizontalSlider_3">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_3"/>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_9">
+          <property name="title">
+           <string>边缘检测</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_15">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_16">
+             <item>
+              <widget class="QCheckBox" name="checkBox_10">
+               <property name="text">
+                <string>进行边缘检测</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="1,2,1">
+               <item>
+                <widget class="QLabel" name="label_9">
+                 <property name="text">
+                  <string>阈值1</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="horizontalSlider_4">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_4"/>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_9" stretch="1,2,1">
+               <item>
+                <widget class="QLabel" name="label_10">
+                 <property name="text">
+                  <string>阈值2</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSlider" name="horizontalSlider_5">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_5"/>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_10">
+          <property name="title">
+           <string>分类结果</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_17">
+           <item>
+            <widget class="QTextEdit" name="textEdit">
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+              </font>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_10">
+          <item>
+           <widget class="QPushButton" name="pushButton">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>识别</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_2">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>查询</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1278</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
